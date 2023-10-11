@@ -3,6 +3,7 @@ import { Transition } from '@headlessui/react'
 import { CheckCircleIcon } from '@heroicons/react/24/outline'
 import { XMarkIcon } from '@heroicons/react/20/solid'
 
+// eslint-disable-next-line react/prop-types
 export default function Notification({show, setShow}) {
 
     return (

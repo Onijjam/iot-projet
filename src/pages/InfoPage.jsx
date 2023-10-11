@@ -35,22 +35,22 @@ export function InfoPage() {
     };
 
     const handlePauseButton = () => {
-        const res = pausePrinting();
+        const res = pausePrinting(nom);
         console.log(res);
     }
 
     const handleStopButton = () => {
-        const res = stopPrinting();
+        const res = stopPrinting(nom);
         console.log(res);
     }
 
     const handleUpdateTemp = () => {
         if (dataPrinter.plateau !== plateauValue) {
-            const res = plateauTemp(plateauValue);
+            const res = plateauTemp(plateauValue, nom);
             console.log(res);
         }
         if (dataPrinter.buse !== buseValue) {
-            const res = buseTemp(buseValue);
+            const res = buseTemp(buseValue, nom);
             console.log(res);
         }
         setOpen(false);

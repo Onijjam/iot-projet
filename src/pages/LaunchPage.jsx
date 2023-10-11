@@ -40,7 +40,7 @@ export default function LaunchPage() {
     const handleFormSubmit = async () => {
         if (selectedOption) {
             try {
-                const response = await startPrinting(selected);
+                const response = await startPrinting(selected, nom);
                 console.log('Printing started successfully:', response);
                 setOpen(false);
                 setTimeout(() => {
