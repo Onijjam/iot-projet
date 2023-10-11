@@ -16,7 +16,7 @@ export default function LaunchPage() {
 
     useEffect(() => {
         const getData = async () => {
-            const result = await fetchFiles();
+            const result = await fetchFiles(nom);
             setData(result || []);
             if (result && result.length > 0) {
                 setSelected(result[0]);
