@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .custom-thumb::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        height: 25px; /* Changer la hauteur selon vos besoins */
+        width: 25px; /* Changer la largeur selon vos besoins */
+        background: #60a5fa; /* Changer la couleur de fond selon vos besoins */
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    .custom-thumb::-moz-range-thumb {
+        height: 25px; /* Changer la hauteur selon vos besoins */
+        width: 25px; /* Changer la largeur selon vos besoins */
+        background: #60a5fa; /* Changer la couleur de fond selon vos besoins */
+        cursor: pointer;
+        border-radius: 50%;
+    }
+}
